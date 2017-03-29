@@ -32,6 +32,8 @@ public struct FlightCanvas {
         
         let path = disc.toFlightPath(with: start, and: finish)
         
+        print("Debug \(path)")
+        
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = path.cgPath
         shapeLayer.strokeColor = UIColor.black.cgColor
